@@ -9,8 +9,8 @@
 
 MODULE_LICENSE("GPL");            ///< The license type -- this affects available functionality
 
-#define  CLASS_NAME  "ellisys1"        ///< The device class -- this is a character device driver
-#define  DEVICE_NAME "ellisys1"    //< The device will appear at /dev/ellisys11ad using this value
+#define  CLASS_NAME  "mychardev1"        ///< The device class -- this is a character device driver
+#define  DEVICE_NAME "mychardev1"    //< The device will appear at /dev/mychardev11ad using this value
 
 static struct class*  mychardev_class  = NULL; //< The device-driver class struct pointer
 static struct device* mychardev_device = NULL; //< The device-driver device struct pointer

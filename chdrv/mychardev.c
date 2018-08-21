@@ -13,8 +13,8 @@ MODULE_AUTHOR("Hossain Reja");    ///< The author -- visible when you use modinf
 MODULE_DESCRIPTION("A simple Linux char driver");  ///< The description -- see modinfo
 MODULE_VERSION("0.1");            ///< A version number to inform users
 
-#define CLASS_NAME  "ellisys"        ///< The device class -- this is a character device driver
-#define DEVICE_NAME "ellisys"        //< The device will appear at /dev/ellisys11ad using this value
+#define CLASS_NAME  "mychardev"        ///< The device class -- this is a character device driver
+#define DEVICE_NAME "mychardev"        //< The device will appear at /dev/mychardev11ad using this value
 
 static struct class*  mychardev_class  = NULL; //< The device-driver class struct pointer
 static struct device* mychardev_device = NULL; //< The device-driver device struct pointer
